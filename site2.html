@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>EL GOUNA // RED SEA — YOUR SUMMER, YOUR WAY (Y2K Coastal Edition)</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+
+  <!-- Google Fonts: Space Grotesk, Barlow Condensed, DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=Space+Grotesk:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS with custom configuration -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "deep-ink": "#111516",
+            "tertiary-fixed": "#ffdbca",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#92001f",
+            "background": "#f7fafb",
+            "primary-container": "#a50e28",
+            "surface-container": "#ebeeef",
+            "outline-variant": "#e2bebd",
+            "tertiary": "#652900",
+            "warm-ivory": "#FFFDF9",
+            "surface-container-high": "#e6e9ea",
+            "surface-dim": "#d7dadb",
+            "on-secondary-fixed-variant": "#004d61",
+            "on-secondary-container": "#00667e",
+            "surface-bright": "#f7fafb",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f1f4f5",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#ffb58e",
+            "surface": "#f7fafb",
+            "secondary-fixed-dim": "#86d1ed",
+            "surface-variant": "#e0e3e4",
+            "on-surface": "#181c1d",
+            "secondary-container": "#97e2fe",
+            "on-tertiary-fixed-variant": "#783200",
+            "on-secondary-fixed": "#001f28",
+            "on-primary-fixed": "#410008",
+            "secondary-fixed": "#b8eaff",
+            "inverse-surface": "#2d3132",
+            "inverse-on-surface": "#eef1f2",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#5a4040",
+            "tertiary-fixed-dim": "#ffb690",
+            "on-background": "#181c1d",
+            "on-tertiary-fixed": "#341100",
+            "on-error-container": "#93000a",
+            "primary": "#7d0019",
+            "primary-fixed": "#ffdad9",
+            "inverse-primary": "#ffb3b2",
+            "sand-peach": "#F9CE9A",
+            "surface-tint": "#b71f33",
+            "on-primary-container": "#ffb2b1",
+            "tertiary-container": "#8a3a00",
+            "outline": "#8e706f",
+            "primary-fixed-dim": "#ffb3b2",
+            "surface-container-lowest": "#ffffff",
+            "lagoon-glow": "#97E2FE",
+            "off-white": "#F7F4EE",
+            "surface-container-highest": "#e0e3e4",
+            "sun-daze": "#FFB58E",
+            "secondary": "#006780",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "space-md": "1rem",
+            "margin": "3.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.75rem",
+            "space-xl": "3rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["DM Sans", "sans-serif"],
+            "body-md": ["DM Sans", "sans-serif"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
+            "display-hero": ["Space Grotesk", "sans-serif"],
+            "display-lg": ["Space Grotesk", "sans-serif"],
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "label-sm": ["Barlow Condensed", "sans-serif"],
+            "label-md": ["Barlow Condensed", "sans-serif"],
+            "label-lg": ["Barlow Condensed", "sans-serif"],
+            "display-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "body-lg": ["DM Sans", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-sm": ["20px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600"}],
+            "display-hero": ["72px", {"lineHeight": "76px", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+            "display-lg": ["56px", {"lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+            "display-hero-mobile": ["44px", {"lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+            "headline-md": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "700"}],
+            "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700"}],
+            "label-lg": ["16px", {"lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "700"}],
+            "display-lg-mobile": ["36px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "headline-lg": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Y2K Custom Styles & Kinetic Animations -->
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    /* Tactile Hard Cast Sticker Drop Shadows */
+    .sticker-shadow {
+      box-shadow: 3.5px 3.5px 0px #111516;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .sticker-shadow:hover {
+      transform: translate(-2px, -3px);
+      box-shadow: 6px 6px 0px #111516;
+    }
+    .sticker-shadow:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1.5px 1.5px 0px #111516;
+    }
+
+    .sticker-shadow-sm {
+      box-shadow: 2px 2px 0px #111516;
+      transition: all 0.2s ease;
+    }
+    .sticker-shadow-sm:hover {
+      transform: translate(-1px, -2px);
+      box-shadow: 3.5px 3.5px 0px #111516;
+    }
+
+    .sticker-shadow-lg {
+      box-shadow: 6px 6px 0px #111516;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .sticker-shadow-lg:hover {
+      transform: translate(-3px, -3px) rotate(0deg);
+      box-shadow: 9px 9px 0px #111516;
+    }
+
+    /* Kinetic Marquee */
+    @keyframes marqueeFast {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      white-space: nowrap;
+      animation: marqueeFast 22s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Floating Polaroids and Wobble Badges */
+    @keyframes stickerWobble {
+      0%, 100% { transform: rotate(-6deg) scale(1); }
+      50% { transform: rotate(-3deg) scale(1.04); }
+    }
+    @keyframes stickerFloat {
+      0%, 100% { transform: translateY(0px) rotate(2deg); }
+      50% { transform: translateY(-7px) rotate(3.5deg); }
+    }
+    .wobble-sticker {
+      animation: stickerWobble 6s ease-in-out infinite;
+    }
+    .floating-polaroid {
+      animation: stickerFloat 7s ease-in-out infinite;
+    }
+
+    /* Scroll Reveals */
+    .y2k-reveal {
+      opacity: 0;
+      transform: translateY(28px) scale(0.97);
+      transition: opacity 0.65s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .y2k-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Smooth Image Zoom */
+    .card-zoom-img {
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .group:hover .card-zoom-img {
+      transform: scale(1.08);
+    }
+  </style>
+  <link rel="stylesheet" href="css/site2.css"/>
+</head>
+<body class="bg-warm-ivory text-deep-ink font-body-md antialiased selection:bg-sand-peach selection:text-deep-ink overflow-x-hidden">
+
+  <!-- TOP PERSISTENT 3-SITE DESIGN SWITCHER -->
+  <aside aria-label="Design Switcher" class="fixed top-3 right-4 sm:right-6 z-[999] flex items-center bg-[#111516]/95 backdrop-blur-md p-1.5 rounded-full border-2 border-sand-peach shadow-2xl gap-1.5 text-xs font-label-md uppercase tracking-wider select-none">
+    <span class="text-sand-peach px-2.5 font-bold hidden md:inline-flex items-center gap-1">
+      <span class="material-symbols-outlined text-[15px]">palette</span> STYLE:
+    </span>
+    <a href="site1.html" class="px-3.5 py-1.5 rounded-full font-bold text-[#FFF9F0]/80 hover:text-white hover:bg-white/10 flex items-center gap-1 transition-all">
+      <span>1. Mediterranean</span>
+    </a>
+    <a href="site2.html" class="px-3.5 py-1.5 rounded-full font-bold bg-[#F5731C] text-deep-ink shadow-md flex items-center gap-1.5 border border-white/20 transition-all font-extrabold">
+      <span class="w-2 h-2 rounded-full bg-deep-ink animate-ping"></span>
+      <span>2. Y2K Coastal</span>
+    </a>
+    <a href="site3.html" class="px-3.5 py-1.5 rounded-full font-bold text-[#FFF9F0]/80 hover:text-white hover:bg-white/10 flex items-center gap-1 transition-all">
+      <span>3. 1980s Gazette</span>
+    </a>
+  </aside>
+
+  <!-- LIVE TELEMETRY TOP BAR -->
+  <div class="bg-deep-ink text-warm-ivory text-label-sm font-label-sm uppercase tracking-widest px-4 py-2 border-b border-deep-ink flex flex-wrap items-center justify-between gap-2 z-50 relative">
+    <div class="flex items-center gap-3">
+      <span class="inline-flex items-center gap-1.5 bg-primary-container text-warm-ivory px-2 py-0.5 rounded-full text-[10px] font-bold">
+        <span class="w-1.5 h-1.5 rounded-full bg-sand-peach animate-ping"></span>
+        LIVE FEED
+      </span>
+      <span>EL GOUNA LIVE • 28°C SUN • 17.5 KTS THERMAL WIND • WATER 24°C</span>
+    </div>
+    <div class="flex items-center gap-4 text-warm-ivory/80 pr-32 sm:pr-40">
+      <span>HIGH TIDE: 15:42</span>
+      <span class="hidden md:inline">•</span>
+      <span class="hidden md:inline">ZEYTOUNA WATER CLARITY: 99.4%</span>
+      <span class="bg-secondary text-warm-ivory px-2 py-0.5 rounded text-[10px] tracking-wider">LAT 27.3949° N</span>
+    </div>
+  </div>
+
+  <!-- EDITORIAL NAVIGATION HEADER -->
+  <header class="docked full-width top-0 z-40 sticky bg-warm-ivory border-b-2 border-deep-ink/15 shadow-[0_4px_0_0_#111516]">
+    <div class="w-full px-6 md:px-margin py-4 flex items-center justify-between mx-auto">
+      <!-- Official Emblem Logo & Identity -->
+      <a class="flex items-center gap-3 group" href="#hero">
+        <img alt="Official El Gouna emblem logo badge" class="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="assets/el-gouna-logo.png"/>
+        <div class="flex flex-col">
+          <span class="font-headline-md text-headline-md tracking-tight font-extrabold text-primary uppercase leading-none">EL GOUNA</span>
+          <span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-0.5 font-bold">RED SEA // EGYPT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Cluster -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-wider hover:text-sunset-orange transition-all" href="#vibes">VIBES</a>
+        <a class="text-deep-ink/80 font-label-md text-label-md tracking-wider uppercase transition-colors hover:text-primary" href="#stays">STAYS</a>
+        <a class="text-deep-ink/80 font-label-md text-label-md tracking-wider uppercase transition-colors hover:text-primary" href="#activities">ACTIVITIES</a>
+        <a class="text-deep-ink/80 font-label-md text-label-md tracking-wider uppercase transition-colors hover:text-primary" href="#nightlife">FOOD &amp; CLUBS</a>
+        <a class="text-deep-ink/80 font-label-md text-label-md tracking-wider uppercase transition-colors hover:text-primary" href="#journal">JOURNAL</a>
+        <a class="text-deep-ink/80 font-label-md text-label-md tracking-wider uppercase transition-colors hover:text-primary" href="#map">MAP</a>
+      </nav>
+
+      <!-- Trailing Actions & Search -->
+      <div class="flex items-center gap-3">
+        <button onclick="alert('Search: Type to filter Mangroovy, Casa Cook, Club 88, Kitesurfing...');" aria-label="Search" class="w-9 h-9 rounded-full bg-off-white border border-deep-ink/30 flex items-center justify-center hover:bg-sand-peach transition-colors text-deep-ink sticker-shadow-sm active:translate-x-0.5 active:translate-y-0.5">
+          <span class="material-symbols-outlined text-[18px]">search</span>
+        </button>
+        <button onclick="alert('Saved Bookmarks: 4 spots saved in your temporary wristband.');" aria-label="Saved Bookmarks" class="w-9 h-9 rounded-full bg-off-white border border-deep-ink/30 flex items-center justify-center hover:bg-lagoon-glow transition-colors text-deep-ink sticker-shadow-sm active:translate-x-0.5 active:translate-y-0.5">
+          <span class="material-symbols-outlined text-[18px]">bookmark</span>
+        </button>
+        <a class="hidden sm:inline-flex items-center justify-center px-4 py-2 border-1.5 border-deep-ink bg-warm-ivory text-deep-ink font-label-md text-label-md uppercase tracking-widest rounded-full sticker-shadow-sm hover:bg-sand-peach transition-all active:translate-x-0.5 active:translate-y-0.5" href="#planner">
+          PLAN TRIP
+        </a>
+        <a class="inline-flex items-center justify-center px-5 py-2 bg-primary-container text-warm-ivory font-label-md text-label-md uppercase tracking-widest rounded-full sticker-shadow hover:bg-primary transition-all active:translate-x-0.5 active:translate-y-0.5" href="#planner">
+          BOOK PASS
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO CAMPAIGN SECTION (Full Width) -->
+  <section class="relative overflow-hidden pt-8 pb-14 border-b-2 border-deep-ink bg-warm-ivory" id="hero">
+    <div class="w-full px-6 md:px-margin">
+      <!-- Top Eyebrow Badges Row -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6 y2k-reveal">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="bg-secondary text-lagoon-glow font-label-sm text-label-sm uppercase px-3 py-1 rounded-full border border-deep-ink sticker-shadow-sm -rotate-1">
+            27°N SUN SEEKERS
+          </span>
+          <span class="bg-sand-peach text-deep-ink font-label-sm text-label-sm uppercase px-3 py-1 rounded-full border border-deep-ink sticker-shadow-sm rotate-1">
+            RED SEA WAVE CHECK 01
+          </span>
+          <span class="bg-primary-container text-warm-ivory font-label-sm text-label-sm uppercase px-3 py-1 rounded-full border border-deep-ink sticker-shadow-sm">
+            VERIFIED PARADISE
+          </span>
+        </div>
+        <div class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-deep-ink/70">
+          <span class="material-symbols-outlined text-secondary text-[18px]">routine</span>
+          <span>CURATED ISSUE N° 08 // SUMMER ESCAPISM</span>
+        </div>
+      </div>
+
+      <!-- Main Headline Typography Grid -->
+      <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-10">
+        <div class="lg:col-span-8 z-10 y2k-reveal">
+          <h1 class="font-display-hero text-display-hero-mobile md:text-display-hero tracking-tighter text-deep-ink font-extrabold uppercase leading-none">
+            YOUR SUMMER, <br/>
+            <span class="text-primary italic font-serif tracking-normal">YOUR WAY.</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-deep-ink/80 max-w-3xl mt-5 font-medium leading-relaxed">
+            Red Sea Drift • Lagoon Life • 24/7 Sun Culture. Unfiltered salt days, world-class thermal winds, electric marina nights, and 19 interconnected private turquoise lagoons.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 mt-8">
+            <a class="inline-flex items-center gap-2 bg-[#F5731C] text-deep-ink font-label-lg text-label-lg uppercase px-8 py-4 rounded-full border-2 border-deep-ink sticker-shadow hover:translate-x-0.5 hover:translate-y-0.5 transition-all font-bold" href="#vibes">
+              <span>EXPLORE THE VIBES</span>
+              <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+            </a>
+            <a class="inline-flex items-center gap-2 bg-warm-ivory text-deep-ink font-label-lg text-label-lg uppercase px-7 py-4 rounded-full border-2 border-deep-ink sticker-shadow-sm hover:bg-sand-peach transition-all font-bold" href="#planner">
+              <span>CURATE MY TRIP</span>
+              <span class="material-symbols-outlined text-[20px]">tune</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating Polaroid / Badges on Hero Side -->
+        <div class="lg:col-span-4 relative flex justify-center lg:justify-end y2k-reveal">
+          <div class="relative w-full max-w-sm">
+            <div class="bg-off-white p-3 border-2 border-deep-ink sticker-shadow-lg rotate-2 floating-polaroid">
+              <div class="relative aspect-[4/5] overflow-hidden border border-deep-ink/20">
+                <img class="w-full h-full object-cover" data-alt="High energy young travelers enjoying turquoise lagoon watersports and wakeboarding in El Gouna Red Sea Egypt under bright golden hour sunlight with desert mountains and modern coastal architecture in the background." src="assets/photos/566669420_18534360598030637_7867181720198661869_n.jpg"/>
+                <div class="absolute top-3 left-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2.5 py-1 rounded">
+                  LAGOON CODE // 09
+                </div>
+              </div>
+              <div class="pt-3 pb-1 flex items-center justify-between">
+                <div>
+                  <p class="font-headline-sm text-headline-sm text-deep-ink font-bold uppercase leading-none">Kite Lagoon 04</p>
+                  <p class="font-label-sm text-label-sm text-deep-ink/60 mt-1 uppercase">Mangroovy Beach • 14:20 PM</p>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl">sailing</span>
+              </div>
+            </div>
+
+            <!-- Overlapping Sticker Badges -->
+            <div class="absolute -top-5 -left-6 bg-sand-peach text-deep-ink border-2 border-deep-ink px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider sticker-shadow -rotate-6 wobble-sticker">
+              19 ISLANDS TO HOP
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-[#F5731C] text-warm-ivory border-2 border-deep-ink px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-wider sticker-shadow rotate-3">
+              NO BAD DAYS
+            </div>
+            <div class="absolute top-1/2 -right-4 bg-secondary text-lagoon-glow border-2 border-deep-ink px-3 py-1 rounded-full font-label-sm text-label-sm uppercase sticker-shadow rotate-12">
+              COASTAL ESCAPISM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Gallery Grid 3-Up (Full Width) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 y2k-reveal">
+        <div class="bg-off-white border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow group">
+          <div class="aspect-[16/10] overflow-hidden relative">
+            <img class="card-zoom-img w-full h-full object-cover" data-alt="Vibrant youth kitesurfing and foiling on crystalline turquoise shallow lagoon water in El Gouna Egypt with warm golden sunlight and colorful kites against azure sky." src="assets/photos/ice-187193-21f6f4-206889.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-deep-ink/80 backdrop-blur-sm text-warm-ivory px-2 py-0.5 rounded font-label-sm text-label-sm uppercase">WIND SPOTS // MANGROOVY</span>
+          </div>
+          <div class="p-4 flex items-center justify-between">
+            <span class="font-headline-sm text-headline-sm text-deep-ink font-bold uppercase">KITE &amp; HYDROFOIL</span>
+            <span class="font-label-md text-label-md text-secondary font-bold uppercase">EXPLORE →</span>
+          </div>
+        </div>
+
+        <div class="bg-off-white border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow group">
+          <div class="aspect-[16/10] overflow-hidden relative">
+            <img class="card-zoom-img w-full h-full object-cover" data-alt="Chic open-air coastal beach club with sunset cocktails comfortable ivory loungers sunbathers and palm shadows in El Gouna Red Sea." src="assets/photos/image-008.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-deep-ink/80 backdrop-blur-sm text-warm-ivory px-2 py-0.5 rounded font-label-sm text-label-sm uppercase">GOLDEN HOUR // CLUB 88</span>
+          </div>
+          <div class="p-4 flex items-center justify-between">
+            <span class="font-headline-sm text-headline-sm text-deep-ink font-bold uppercase">DAYBEDS &amp; BEATS</span>
+            <span class="font-label-md text-label-md text-primary font-bold uppercase">RESERVE →</span>
+          </div>
+        </div>
+
+        <div class="bg-off-white border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow group">
+          <div class="aspect-[16/10] overflow-hidden relative">
+            <img class="card-zoom-img w-full h-full object-cover" data-alt="Luxury yacht gliding smoothly through the calm turquoise lagoon channels of El Gouna with warm terracotta and sand-colored boutique villas reflecting in the water." src="assets/photos/abu-tig-marina.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-deep-ink/80 backdrop-blur-sm text-warm-ivory px-2 py-0.5 rounded font-label-sm text-label-sm uppercase">MARINA DRIFT // ABU TIG</span>
+          </div>
+          <div class="p-4 flex items-center justify-between">
+            <span class="font-headline-sm text-headline-sm text-deep-ink font-bold uppercase">LAGOON HOPPING</span>
+            <span class="font-label-md text-label-md text-deep-ink font-bold uppercase">CHART →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KINETIC TICKER TAPE RIBBON -->
+  <div class="w-full bg-[#F5731C] text-deep-ink border-b-2 border-deep-ink py-2.5 overflow-hidden select-none">
+    <div class="animate-marquee font-label-lg text-label-lg uppercase tracking-widest font-extrabold flex gap-8 items-center">
+      <span>KITESURF</span>
+      <span class="text-primary-container">✦</span>
+      <span>SUNSET SOUNDTRACKS</span>
+      <span class="text-primary-container">✦</span>
+      <span>LAGOON DRIFT</span>
+      <span class="text-primary-container">✦</span>
+      <span>ABU TIG NIGHTS</span>
+      <span class="text-primary-container">✦</span>
+      <span>DESERT RAVES</span>
+      <span class="text-primary-container">✦</span>
+      <span>FREE DIVE</span>
+      <span class="text-primary-container">✦</span>
+      <span>FRESH SEAFOOD</span>
+      <span class="text-primary-container">✦</span>
+      <span>100% REEF SAFE TRAVEL</span>
+      <span class="text-primary-container">✦</span>
+      <span>KITESURF</span>
+      <span class="text-primary-container">✦</span>
+      <span>SUNSET SOUNDTRACKS</span>
+      <span class="text-primary-container">✦</span>
+      <span>LAGOON DRIFT</span>
+      <span class="text-primary-container">✦</span>
+      <span>ABU TIG NIGHTS</span>
+      <span class="text-primary-container">✦</span>
+      <span>DESERT RAVES</span>
+    </div>
+  </div>
+
+  <!-- SECTION 3: EXPLORE BY VIBE (Full Width Bento Matrix) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-off-white" id="vibes">
+    <div class="w-full px-6 md:px-margin">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 y2k-reveal">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-sand-peach text-deep-ink font-label-sm text-label-sm uppercase px-3 py-1 rounded-full border border-deep-ink sticker-shadow-sm mb-3">
+            <span>CURATED MOOD MATRIX</span>
+          </div>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-bold text-deep-ink leading-tight">
+            EXPLORE BY VIBE.
+          </h2>
+          <p class="font-body-md text-body-md text-deep-ink/70 mt-2 max-w-2xl">
+            Skip sterile hotel filters. Filter your Red Sea expedition by energy frequency, soundtrack tempo, and adrenaline index.
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="font-label-md text-label-md uppercase text-deep-ink/60">SHOWING 6 OF 18 MODES</span>
+          <button onclick="alert('Shuffled vibes matrix!');" class="px-4 py-2 bg-warm-ivory border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase sticker-shadow-sm hover:bg-lagoon-glow transition-colors font-bold">
+            SHUFFLE VIBES
+          </button>
+        </div>
+      </div>
+
+      <!-- Bento Matrix Grid (Full Width) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Vibe Card 1: Beach Days -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/11] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Serene sandbar beach loungers in shallow turquoise waters at Zeytouna Beach El Gouna with people relaxing under straw umbrellas in warm desert coastal sunshine." src="assets/photos/El_Gouna_,_Egypt.jpg"/>
+              <span class="absolute top-3 left-3 bg-[#F9CE9A] text-deep-ink font-label-sm text-label-sm uppercase px-2.5 py-1 rounded border border-deep-ink sticker-shadow-sm -rotate-2 font-bold">
+                CHILL &amp; SAND
+              </span>
+              <span class="absolute bottom-3 right-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                BPM: 94 ACOUSTIC
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">BEACH DAYS &amp; LAGOON CHILL</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Zeytouna sandbars, private overwater hammocks, sea salt iced lattes, and effortless warm shallows. Zero rush.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">ZEYTOUNA PIER</span>
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">TOWEL SESSIONS</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-sand-peach transition-colors font-bold" href="#planner">
+              <span>DROP IN</span>
+              <span class="material-symbols-outlined text-[18px]">east</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vibe Card 2: Ocean Energy -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/11] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Professional young kitesurfers leaping over crystal clear turquoise waters at Mangroovy Beach El Gouna with Red Sea coast and kite wings in air." src="assets/photos/0c7529ac-df04-45c5-a02f-b624435cf9f8.avif"/>
+              <span class="absolute top-3 left-3 bg-[#036982] text-[#97E2FE] font-label-sm text-label-sm uppercase px-2.5 py-1 rounded border border-deep-ink sticker-shadow-sm rotate-1 font-bold">
+                KITE &amp; LAGOON
+              </span>
+              <span class="absolute bottom-3 right-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                WIND: 18-24 KTS
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">OCEAN ENERGY &amp; KITE CULTURE</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Mangroovy world-class thermal winds, flat-water hydrofoil speed runs, pump tracks, and beach-camp debriefs.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">MANGROOVY STRIP</span>
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">WING FOILING</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-secondary hover:text-warm-ivory transition-colors font-bold" href="#planner">
+              <span>DROP IN</span>
+              <span class="material-symbols-outlined text-[18px]">east</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vibe Card 3: After Dark -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/11] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Evening open-air rooftop nightclub with string lights electronic DJs young stylish crowd dancing under starlit Egyptian sky overlooking illuminated marina yachts." src="assets/photos/1mi5i424x9awbk7804F4C_Q90.avif"/>
+              <span class="absolute top-3 left-3 bg-[#F5731C] text-[#FFFDF9] font-label-sm text-label-sm uppercase px-2.5 py-1 rounded border border-deep-ink sticker-shadow-sm -rotate-1 font-bold">
+                SUNSET BEATS
+              </span>
+              <span class="absolute bottom-3 right-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                BPM: 124 MELODIC
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">AFTER DARK &amp; BEATS</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Club 88 sunset transitions, Abu Tig Marina open-air rooftops, hidden desert parties, and warm midnight dip sessions.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">CLUB 88</span>
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">MOODS MARINA</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-[#F5731C] hover:text-warm-ivory transition-colors font-bold" href="#planner">
+              <span>DROP IN</span>
+              <span class="material-symbols-outlined text-[18px]">east</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vibe Card 4: Desert Drift -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/11] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Golden hour desert dunes adventure safari quad bikes and young travelers in sand dunes of Eastern Desert near El Gouna with dramatic sunset sky." src="assets/photos/4f40e0256400481.Y3JvcCwzMTcwLDI0ODAsMTY0LDA.jpg"/>
+              <span class="absolute top-3 left-3 bg-tertiary-container text-warm-ivory font-label-sm text-label-sm uppercase px-2.5 py-1 rounded border border-deep-ink sticker-shadow-sm rotate-2 font-bold">
+                DUNE SAFARI
+              </span>
+              <span class="absolute bottom-3 right-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                STARGAZING: CLASS 1
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">DESERT DRIFT &amp; ADVENTURE</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Sunset canyon buggy blasts, Bedouin fire dinners beneath the Milky Way, and silence 15 minutes away from the sea.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">OASIS RIDGE</span>
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">QUAD TRAILS</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-sand-peach transition-colors font-bold" href="#planner">
+              <span>DROP IN</span>
+              <span class="material-symbols-outlined text-[18px]">east</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vibe Card 5: Food Crush -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/11] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Chic marina side open-air restaurant table with wood fired sourdough pizza freshly grilled red sea catch iced matcha and young diners laughing in warm sunshine." src="assets/photos/image-007.jpg"/>
+              <span class="absolute top-3 left-3 bg-primary-container text-warm-ivory font-label-sm text-label-sm uppercase px-2.5 py-1 rounded border border-deep-ink sticker-shadow-sm -rotate-1 font-bold">
+                CULINARY PULSE
+              </span>
+              <span class="absolute bottom-3 right-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                DOCKSIDE TABLES: 42
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">FOOD CRUSH &amp; CAFE RUNS</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Wood-fired Neapolitan sourdough, waterfront matcha docks, Egyptian farm brunches, and catch-of-the-day salt bakes.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">TAMR HENNA</span>
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">MARINA QUAY</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-primary-container hover:text-warm-ivory transition-colors font-bold" href="#planner">
+              <span>DROP IN</span>
+              <span class="material-symbols-outlined text-[18px]">east</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vibe Card 6: Creative Retreats -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/11] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Young woman practicing tranquil stand-up paddleboard yoga in a calm emerald turquoise lagoon surrounded by minimalist sand-hued architecture in El Gouna." src="assets/photos/El_Gouna_Library_R02.jpg"/>
+              <span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase px-2.5 py-1 rounded border border-deep-ink sticker-shadow-sm rotate-2 font-bold">
+                BODY &amp; FOCUS
+              </span>
+              <span class="absolute bottom-3 right-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                TRANQUILITY: 98%
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">CREATIVE RETREATS &amp; WELLNESS</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Lagoon SUP yoga, boutique design studios, desert breathwork retreats, and digital nomad creator hubs with gigabit fiber.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">CASA COOK SANCTUARY</span>
+                <span class="bg-off-white text-deep-ink/80 border border-deep-ink/20 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">G SPACE CO-WORK</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full inline-flex items-center justify-between px-4 py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-lagoon-glow transition-colors font-bold" href="#planner">
+              <span>DROP IN</span>
+              <span class="material-symbols-outlined text-[18px]">east</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: THE LAGOON ARCHIPELAGO (Full Width Collage) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-warm-ivory" id="activities">
+    <div class="w-full px-6 md:px-margin">
+      <!-- Section Header -->
+      <div class="border-b-2 border-deep-ink pb-6 mb-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-4 y2k-reveal">
+        <div>
+          <span class="font-label-md text-label-md uppercase text-primary font-bold tracking-widest">// THE RED SEA BLUEPRINT</span>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-extrabold text-deep-ink tracking-tight mt-1">
+            THE LAGOON ARCHIPELAGO.
+          </h2>
+        </div>
+        <p class="font-body-md text-body-md text-deep-ink/70 max-w-lg">
+          A fully walkable, boatable web of 19 connected marine basins where no spot is more than a 4-minute water taxi or bicycle glide away.
+        </p>
+      </div>
+
+      <!-- Editorial Magazine Collage Layout (Full Width) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Main Large Feature Spread -->
+        <div class="lg:col-span-7 y2k-reveal">
+          <div class="bg-off-white p-4 border-2 border-deep-ink sticker-shadow-lg relative">
+            <div class="relative aspect-[16/10] overflow-hidden border border-deep-ink/30">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="High-fashion aerial view of Abu Tig Marina in El Gouna with luxury motor yachts berthed along pastel-colored Mediterranean architecture and turquoise water canals." src="assets/photos/El_Gouna_New_Marina_R05.jpg"/>
+              <div class="absolute top-4 left-4 bg-deep-ink text-warm-ivory px-3 py-1 font-label-sm text-label-sm uppercase rounded font-bold">
+                LOC: ABU TIG MARINA // 27.3995° N, 33.6811° E
+              </div>
+              <div class="absolute bottom-4 right-4 bg-sand-peach text-deep-ink border border-deep-ink px-3 py-1 font-label-sm text-label-sm uppercase font-bold rounded sticker-shadow-sm">
+                YACHTS • VINYL WINE BARS • SUNSET SLOWDOWN
+              </div>
+            </div>
+            <div class="mt-4 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+              <div>
+                <span class="font-headline-md text-headline-md font-bold text-deep-ink uppercase">ABU TIG HARBOR PROMENADE</span>
+                <p class="font-body-sm text-body-sm text-deep-ink/70">The cultural heartbeat where desert breeze meets Italian gelato, vintage boats, and late dinner reservations.</p>
+              </div>
+              <a class="inline-flex items-center gap-2 bg-primary-container text-warm-ivory px-5 py-2.5 rounded-full font-label-md text-label-md uppercase tracking-wider sticker-shadow-sm hover:bg-primary transition-all self-start sm:self-auto shrink-0 font-bold" href="#map">
+                <span>VIEW ANCHORS</span>
+                <span class="material-symbols-outlined text-[18px]">pin_drop</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accompanying Collage Stacks -->
+        <div class="lg:col-span-5 flex flex-col gap-6 y2k-reveal">
+          <!-- Collage Item 1 -->
+          <div class="flex gap-4 p-4 bg-off-white border-2 border-deep-ink sticker-shadow-sm items-center hover:translate-x-1 transition-transform">
+            <div class="w-28 h-28 shrink-0 overflow-hidden border border-deep-ink">
+              <img class="w-full h-full object-cover" data-alt="Sunlit turquoise swimming cove with wooden boardwalks leading out into deep azure water at Zeytouna Island El Gouna." src="assets/photos/El_Gouna_,_Egypt (1).jpg"/>
+            </div>
+            <div>
+              <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">ISLAND ZERO // 600M PIER</span>
+              <h4 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink">ZEYTOUNA ISLAND REEF</h4>
+              <p class="font-body-sm text-body-sm text-deep-ink/70 mt-1">Walk the 600m wooden pier straight to the deep barrier reef edge for spontaneous coral snorkels.</p>
+            </div>
+          </div>
+
+          <!-- Collage Item 2 -->
+          <div class="flex gap-4 p-4 bg-off-white border-2 border-deep-ink sticker-shadow-sm items-center hover:translate-x-1 transition-transform">
+            <div class="w-28 h-28 shrink-0 overflow-hidden border border-deep-ink">
+              <img class="w-full h-full object-cover" data-alt="Traditional terracotta-domed Nubian architecture in Tamr Henna square El Gouna with shaded cafes and bustling young pedestrians." src="assets/photos/El_Gouna_R33.jpg"/>
+            </div>
+            <div>
+              <span class="font-label-sm text-label-sm uppercase text-[#F5731C] font-bold">DOWNTOWN CIVIC CORE</span>
+              <h4 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink">TAMR HENNA SQUARE</h4>
+              <p class="font-body-sm text-body-sm text-deep-ink/70 mt-1">Shaded bougainvillea archways, artisanal bakeries, fruit stands, and open-air chess tables.</p>
+            </div>
+          </div>
+
+          <!-- Collage Item 3 -->
+          <div class="flex gap-4 p-4 bg-off-white border-2 border-deep-ink sticker-shadow-sm items-center hover:translate-x-1 transition-transform">
+            <div class="w-28 h-28 shrink-0 overflow-hidden border border-deep-ink">
+              <img class="w-full h-full object-cover" data-alt="Tranquil glassy turquoise water channel with modern whitewashed private villas and small electric motorboats docked in Fanadir Lagoons." src="assets/photos/b66a3_1.jpg"/>
+            </div>
+            <div>
+              <span class="font-label-sm text-label-sm uppercase text-primary font-bold">DEEP WATER CHANNELS</span>
+              <h4 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink">FANADIR WATERWAYS</h4>
+              <p class="font-body-sm text-body-sm text-deep-ink/70 mt-1">Glass-like wakeboard runs, paddle routes, and private sunset boat cruises with zero chop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: BENEATH THE AZURE (Full Width Oceanic Teal) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-secondary text-warm-ivory relative overflow-hidden" id="marine">
+    <div class="w-full px-6 md:px-margin relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center y2k-reveal">
+        <div class="lg:col-span-5">
+          <div class="inline-flex items-center gap-2 bg-lagoon-glow text-deep-ink font-label-sm text-label-sm uppercase px-3 py-1 rounded-full border border-deep-ink sticker-shadow-sm mb-4 font-bold">
+            <span>REEF SAFE GUARANTEE</span>
+          </div>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-black text-warm-ivory leading-tight">
+            BENEATH THE AZURE: <br/>
+            <span class="text-lagoon-glow">OCEAN PLAYGROUND.</span>
+          </h2>
+          <p class="font-body-md text-body-md text-warm-ivory/80 mt-4 leading-relaxed max-w-xl">
+            The northern Red Sea contains some of the planet's highest-resilience coral gardens. From wild spinner dolphin pods at Sha'ab el Erg to deep drop-offs and vintage shipwrecks, dive into living water.
+          </p>
+          <div class="grid grid-cols-2 gap-4 mt-8">
+            <div class="bg-deep-ink/40 p-4 border-2 border-lagoon-glow/40 rounded-DEFAULT sticker-shadow-sm">
+              <span class="font-headline-md text-headline-md text-lagoon-glow font-bold">100%</span>
+              <p class="font-label-sm text-label-sm uppercase text-warm-ivory/80 mt-1">SINGLE-USE PLASTIC FREE LAGOONS</p>
+            </div>
+            <div class="bg-deep-ink/40 p-4 border-2 border-lagoon-glow/40 rounded-DEFAULT sticker-shadow-sm">
+              <span class="font-headline-md text-headline-md text-sand-peach font-bold">200+</span>
+              <p class="font-label-sm text-label-sm uppercase text-warm-ivory/80 mt-1">SPINNER DOLPHINS IN DOLPHIN HOUSE</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a class="inline-flex items-center gap-2 bg-sand-peach text-deep-ink font-label-md text-label-md uppercase px-6 py-3 rounded-full border-2 border-deep-ink sticker-shadow hover:bg-warm-ivory transition-all font-bold" href="#activities">
+              <span>BOOK DOLPHIN &amp; REEF SAFARI</span>
+              <span class="material-symbols-outlined text-[18px]">scuba_diving</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-warm-ivory text-deep-ink p-3 border-2 border-deep-ink sticker-shadow -rotate-1 hover:rotate-0 transition-transform">
+              <div class="aspect-square overflow-hidden border border-deep-ink/20">
+                <img class="w-full h-full object-cover" data-alt="Underwater photography of free-diver swimming near pod of wild spinner dolphins in crystal clear turquoise Red Sea sunlight at Sha'ab el Erg reef." src="assets/photos/b66a3_1.jpg"/>
+              </div>
+              <div class="p-3">
+                <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">WILD ENCOUNTER</span>
+                <p class="font-headline-sm text-headline-sm uppercase font-bold mt-1">SHA'AB EL ERG</p>
+                <p class="font-body-sm text-body-sm text-deep-ink/70">Dolphin house sanctuary protected by local marine ranger patrols.</p>
+              </div>
+            </div>
+
+            <div class="bg-warm-ivory text-deep-ink p-3 border-2 border-deep-ink sticker-shadow rotate-1 sm:translate-y-6 hover:rotate-0 transition-transform">
+              <div class="aspect-square overflow-hidden border border-deep-ink/20">
+                <img class="w-full h-full object-cover" data-alt="Vibrant healthy coral reef nursery under clear turquoise water with clownfish and colorful tropical sea life in El Gouna marine sanctuary." src="assets/photos/images.jpg"/>
+              </div>
+              <div class="p-3">
+                <span class="font-label-sm text-label-sm uppercase text-primary font-bold">NURSERY RESTORATION</span>
+                <p class="font-headline-sm text-headline-sm uppercase font-bold mt-1">CORAL SEED BEDS</p>
+                <p class="font-body-sm text-body-sm text-deep-ink/70">Adopt a micro-fragment and track your planted reef via GPS telemetry.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CURATED STAYS & BOUTIQUE HANGOUTS (Full Width) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-off-white" id="stays">
+    <div class="w-full px-6 md:px-margin">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 y2k-reveal">
+        <div>
+          <span class="font-label-md text-label-md uppercase text-primary font-bold tracking-widest">// ARCHITECTURAL RETREATS</span>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-bold text-deep-ink leading-tight mt-1">
+            CURATED STAYS &amp; HANGOUTS.
+          </h2>
+          <p class="font-body-md text-body-md text-deep-ink/70 mt-2 max-w-xl">
+            From brutalist desert boho suites to harbor-side wind cabins and sustainable private villas with private lagoon decks.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="px-4 py-2 bg-primary-container text-warm-ivory border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase sticker-shadow-sm font-bold">ALL CURATIONS</button>
+          <button class="px-4 py-2 bg-warm-ivory text-deep-ink border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase sticker-shadow-sm hover:bg-sand-peach font-bold">ADULTS ONLY</button>
+          <button class="px-4 py-2 bg-warm-ivory text-deep-ink border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase sticker-shadow-sm hover:bg-sand-peach font-bold">DIRECT LAGOON</button>
+        </div>
+      </div>
+
+      <!-- Hotel Grid (Full Width 4-Col) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Stay Card 1 -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[4/3] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Minimalist luxury bohemian hotel Casa Cook El Gouna with raw concrete textures muted earth tones private plunge pools and palm trees against desert sun." src="assets/photos/da6a0b85-1e53-41f0-a3f6-988bc1e7de78.jpeg"/>
+              <span class="absolute top-2 left-2 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                ADULTS ONLY (16+)
+              </span>
+              <span class="absolute bottom-2 right-2 bg-sand-peach text-deep-ink font-label-sm text-label-sm uppercase px-2 py-0.5 rounded border border-deep-ink font-bold">
+                FROM $185 / NIGHT
+              </span>
+            </div>
+            <div class="p-5">
+              <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">NORTH BEACH // KITE HUB</span>
+              <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink mt-1">CASA COOK EL GOUNA</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Desert brutalism, open-air pergola yoga pavilions, private plunge pools, and private launch strip to Mangroovy.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mt-3">
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">SPA</span>
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">DIRECT KITE ACCESS</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="alert('Booking reservation for Casa Cook initiated!');" class="w-full py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-primary-container hover:text-warm-ivory transition-colors font-bold">
+              CHECK DATES
+            </button>
+          </div>
+        </div>
+
+        <!-- Stay Card 2 -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[4/3] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="The Chedi El Gouna modern waterfront luxury resort with Asian-inspired lines reflecting pools and direct Red Sea beach views under clear sky." src="assets/photos/331767708-El-Gouna.jpg"/>
+              <span class="absolute top-2 left-2 bg-secondary text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                WATERFRONT LUXURY
+              </span>
+              <span class="absolute bottom-2 right-2 bg-sand-peach text-deep-ink font-label-sm text-label-sm uppercase px-2 py-0.5 rounded border border-deep-ink font-bold">
+                FROM $240 / NIGHT
+              </span>
+            </div>
+            <div class="p-5">
+              <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">COASTAL SANCTUARY</span>
+              <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink mt-1">THE CHEDI EL GOUNA</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Timeless seaside tranquility, Nikkei culinary masterclasses, beach cabanas, and uninterrupted Red Sea horizons.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mt-3">
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">PRIVATE BEACH</span>
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">GOURMET DINE</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="alert('Booking reservation for The Chedi initiated!');" class="w-full py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-secondary hover:text-warm-ivory transition-colors font-bold">
+              CHECK DATES
+            </button>
+          </div>
+        </div>
+
+        <!-- Stay Card 3 -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[4/3] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Captain's Inn boutique marina hotel in Abu Tig Marina with nautical balconies overlooking wooden sailing boats and vibrant cafe strip." src="assets/photos/el-gouna-4.jpg"/>
+              <span class="absolute top-2 left-2 bg-[#F5731C] text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                DOG FRIENDLY
+              </span>
+              <span class="absolute bottom-2 right-2 bg-sand-peach text-deep-ink font-label-sm text-label-sm uppercase px-2 py-0.5 rounded border border-deep-ink font-bold">
+                FROM $110 / NIGHT
+              </span>
+            </div>
+            <div class="p-5">
+              <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">ABU TIG HARBOR FRONT</span>
+              <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink mt-1">CAPTAIN'S INN</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                The sailor and windsurfer classic. Walk out your bedroom door directly onto Abu Tig promenade and Marina steakhouse.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mt-3">
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">MARINA VIEW</span>
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">BARTELLERIE</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="alert('Booking reservation for Captain\'s Inn initiated!');" class="w-full py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-[#F5731C] hover:text-warm-ivory transition-colors font-bold">
+              CHECK DATES
+            </button>
+          </div>
+        </div>
+
+        <!-- Stay Card 4 -->
+        <div class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[4/3] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Steigenberger Golf Resort lush green fairways surrounded by calm lagoon waters and Nubian architecture with vaulted arches in El Gouna." src="assets/photos/Golf_course_El_Gouna_2012.jpg"/>
+              <span class="absolute top-2 left-2 bg-tertiary-container text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                GOLF &amp; LAGOON
+              </span>
+              <span class="absolute bottom-2 right-2 bg-sand-peach text-deep-ink font-label-sm text-label-sm uppercase px-2 py-0.5 rounded border border-deep-ink font-bold">
+                FROM $140 / NIGHT
+              </span>
+            </div>
+            <div class="p-5">
+              <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">LAGOON MEANDERS</span>
+              <h3 class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink mt-1">STEIGENBERGER GOLF</h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-2">
+                Surrounded by an 18-hole championship green and tranquil water canals. Sunset boat shuttles directly to Zeytouna Beach.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mt-3">
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">18 HOLES</span>
+                <span class="text-[10px] font-label-sm uppercase bg-off-white px-2 py-0.5 rounded border border-deep-ink/20 font-bold">WATER SHUTTLE</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <button onclick="alert('Booking reservation for Steigenberger Golf initiated!');" class="w-full py-2.5 bg-off-white border-2 border-deep-ink rounded-full font-label-md text-label-md uppercase tracking-wider text-deep-ink hover:bg-sand-peach transition-colors font-bold">
+              CHECK DATES
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: SUNSET TO STARLIGHT (Full Width Nightlife) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-deep-ink text-warm-ivory relative" id="nightlife">
+    <div class="w-full px-6 md:px-margin">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 y2k-reveal">
+        <div>
+          <span class="font-label-md text-label-md uppercase text-sun-daze font-bold tracking-widest">// DUSK TILL DAWN</span>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-black text-warm-ivory leading-tight mt-1">
+            SUNSET TO STARLIGHT.
+          </h2>
+          <p class="font-body-md text-body-md text-warm-ivory/70 mt-2 max-w-xl">
+            When the Red Sea sky transitions from fire peach to indigo, the rhythm kicks in across open-air harbor decks, cultural plazas, and secret desert stages.
+          </p>
+        </div>
+        <div>
+          <span class="bg-primary-container text-warm-ivory font-label-sm text-label-sm uppercase px-4 py-1.5 rounded-full border border-warm-ivory/20 inline-flex items-center gap-2 font-bold">
+            <span class="w-2 h-2 rounded-full bg-sand-peach animate-ping"></span>
+            THIS WEEKEND: 14 GUEST DJS &amp; LIVE SETS
+          </span>
+        </div>
+      </div>
+
+      <!-- Nightlife Collage Grid (Full Width) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Large Night Feature -->
+        <div class="lg:col-span-8 bg-[#181c1d] border-2 border-warm-ivory/20 p-4 rounded-DEFAULT flex flex-col justify-between y2k-reveal">
+          <div class="relative aspect-[16/9] overflow-hidden rounded border border-warm-ivory/10">
+            <img class="card-zoom-img w-full h-full object-cover" data-alt="Energetic open air beach club music party at night in El Gouna with neon red and orange ambient lights stylish young crowd dancing beside illuminated marina lagoon." src="assets/photos/image-008.jpg"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-warm-ivory font-label-sm text-label-sm uppercase px-3 py-1 rounded font-bold">
+              FEATURED VENUE // CLUB 88
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 bg-deep-ink/80 backdrop-blur-md p-4 rounded border border-warm-ivory/10 flex flex-col sm:flex-row justify-between sm:items-center gap-3">
+              <div>
+                <p class="font-headline-sm text-headline-sm font-bold uppercase text-warm-ivory">SUNSET SESSIONS @ CLUB 88 POOL</p>
+                <p class="font-body-sm text-body-sm text-warm-ivory/70">Deep afro-house, floating beds, and signature hibiscus spritzers from 16:30 onwards.</p>
+              </div>
+              <button onclick="alert('Guestlist request sent for Club 88 Sunset Sessions!');" class="px-5 py-2 bg-[#F5731C] text-deep-ink font-label-md text-label-md uppercase font-bold rounded-full sticker-shadow-sm hover:bg-sand-peach transition-colors shrink-0">
+                GUESTLIST
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+            <div class="border border-warm-ivory/15 p-3 rounded">
+              <span class="font-label-sm text-label-sm uppercase text-sun-daze font-bold">THE VENUE</span>
+              <p class="font-headline-sm text-headline-sm font-bold uppercase text-warm-ivory mt-0.5">MOODS MARINA</p>
+              <p class="text-[12px] text-warm-ivory/60 mt-1">Direct water deck dining with upbeat lounge sets and harbor lights.</p>
+            </div>
+            <div class="border border-warm-ivory/15 p-3 rounded">
+              <span class="font-label-sm text-label-sm uppercase text-sun-daze font-bold">CULTURE HUB</span>
+              <p class="font-headline-sm text-headline-sm font-bold uppercase text-warm-ivory mt-0.5">GFF PLAZA</p>
+              <p class="text-[12px] text-warm-ivory/60 mt-1">El Gouna Film Festival architectural stage hosting indie concerts.</p>
+            </div>
+            <div class="border border-warm-ivory/15 p-3 rounded">
+              <span class="font-label-sm text-label-sm uppercase text-sun-daze font-bold">UNDERGROUND</span>
+              <p class="font-headline-sm text-headline-sm font-bold uppercase text-warm-ivory mt-0.5">AURORA CLUB</p>
+              <p class="text-[12px] text-warm-ivory/60 mt-1">Late hours vinyl sessions, raw beats, and open-air courtyard dancing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Perforated Ticket Pass Component -->
+        <div class="lg:col-span-4 bg-warm-ivory text-deep-ink border-2 border-deep-ink rounded-DEFAULT p-6 sticker-shadow-lg flex flex-col justify-between y2k-reveal">
+          <div>
+            <div class="flex items-center justify-between border-b-2 border-deep-ink pb-4">
+              <div>
+                <span class="font-label-sm text-label-sm uppercase text-primary font-bold">ALL-ACCESS TICKET</span>
+                <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink">WEEKEND CLUB PASS</h3>
+              </div>
+              <span class="material-symbols-outlined text-3xl text-primary">confirmation_number</span>
+            </div>
+            <div class="py-6 space-y-4">
+              <div class="flex justify-between items-center text-body-sm">
+                <span class="font-label-sm text-label-sm uppercase text-deep-ink/60 font-bold">VALID FOR:</span>
+                <span class="font-bold">48 HOURS (FRI - SUN)</span>
+              </div>
+              <div class="flex justify-between items-center text-body-sm">
+                <span class="font-label-sm text-label-sm uppercase text-deep-ink/60 font-bold">INCLUDES:</span>
+                <span class="font-bold">5 BEACH CLUBS + 2 ROOFTOPS</span>
+              </div>
+              <div class="flex justify-between items-center text-body-sm">
+                <span class="font-label-sm text-label-sm uppercase text-deep-ink/60 font-bold">TRANSPORT:</span>
+                <span class="font-bold">UNLIMITED LAGOON WATER TAXI</span>
+              </div>
+              <div class="flex justify-between items-center text-body-sm">
+                <span class="font-label-sm text-label-sm uppercase text-deep-ink/60 font-bold">FAST TRACK:</span>
+                <span class="font-bold text-primary">NO QUEUE ACCESS</span>
+              </div>
+            </div>
+
+            <!-- Perforated Line Effect -->
+            <div class="border-t-2 border-dashed border-deep-ink/40 my-2 relative">
+              <span class="absolute -top-3 -left-9 w-6 h-6 rounded-full bg-deep-ink"></span>
+              <span class="absolute -top-3 -right-9 w-6 h-6 rounded-full bg-deep-ink"></span>
+            </div>
+
+            <div class="pt-4 flex items-center justify-between">
+              <div>
+                <span class="font-label-sm text-label-sm uppercase text-deep-ink/60 font-bold">PASS PRICE</span>
+                <p class="font-headline-md text-headline-md font-bold text-deep-ink">$65 <span class="text-sm font-normal text-deep-ink/60">USD</span></p>
+              </div>
+              <div class="font-label-sm text-label-sm uppercase bg-sand-peach px-2.5 py-1 rounded border border-deep-ink font-bold">
+                DIGITAL WALLET READY
+              </div>
+            </div>
+          </div>
+          <button onclick="alert('Wristband Claimed! Added to your passholder wallet.');" class="mt-6 w-full py-3 bg-primary-container text-warm-ivory font-label-md text-label-md uppercase tracking-wider font-bold rounded-full sticker-shadow hover:bg-primary transition-all active:translate-x-0.5 active:translate-y-0.5">
+            CLAIM WRISTBAND
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: INTERACTIVE VIBE MAP & SPOT FINDER (Full Width) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-warm-ivory" id="map">
+    <div class="w-full px-6 md:px-margin">
+      <div class="border-b-2 border-deep-ink pb-6 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4 y2k-reveal">
+        <div>
+          <span class="font-label-md text-label-md uppercase text-primary font-bold tracking-widest">// SATELLITE RADAR</span>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-extrabold text-deep-ink tracking-tight mt-1">
+            ARCHIPELAGO SPOT FINDER.
+          </h2>
+        </div>
+        <!-- Clickable Category Toggles -->
+        <div class="flex flex-wrap gap-2">
+          <button class="px-4 py-1.5 bg-deep-ink text-warm-ivory rounded-full font-label-sm text-label-sm uppercase sticker-shadow-sm font-bold">SECRET BEACHES</button>
+          <button class="px-4 py-1.5 bg-off-white text-deep-ink border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase hover:bg-sand-peach transition-colors font-bold">BEST SUNSETS</button>
+          <button class="px-4 py-1.5 bg-off-white text-deep-ink border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase hover:bg-lagoon-glow transition-colors font-bold">WATERSPORTS HUBS</button>
+          <button class="px-4 py-1.5 bg-off-white text-deep-ink border-2 border-deep-ink rounded-full font-label-sm text-label-sm uppercase hover:bg-sand-peach transition-colors font-bold">COFFEE &amp; WORK</button>
+        </div>
+      </div>
+
+      <!-- Map Display Container (Full Width Panoramic) -->
+      <div class="relative bg-off-white border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow-lg aspect-[16/9] md:aspect-[21/9] y2k-reveal">
+        <img class="w-full h-full object-cover" data-alt="Stylized editorial satellite aerial cartographic map of El Gouna Red Sea Egypt showing intricate turquoise lagoons sandbars interconnected canal networks and coastal islands." src="assets/photos/El_Gouna_,_Egypt (1).jpg"/>
+        
+        <!-- Interactive Marker Overlays -->
+        <div class="absolute top-[28%] left-[35%] group cursor-pointer">
+          <div class="w-8 h-8 bg-primary-container text-warm-ivory rounded-full border-2 border-deep-ink flex items-center justify-center sticker-shadow-sm font-bold text-xs animate-bounce">
+            1
+          </div>
+          <div class="hidden group-hover:block absolute left-9 top-0 bg-warm-ivory border-2 border-deep-ink p-3 rounded sticker-shadow w-64 z-20">
+            <span class="font-label-sm text-label-sm uppercase text-primary font-bold">WIND EPICENTER</span>
+            <p class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink text-sm">Mangroovy Beach</p>
+            <p class="text-[11px] text-deep-ink/70">Flat shallow water, kitesurf launch, sound systems.</p>
+          </div>
+        </div>
+
+        <div class="absolute top-[48%] left-[58%] group cursor-pointer">
+          <div class="w-8 h-8 bg-[#F5731C] text-deep-ink rounded-full border-2 border-deep-ink flex items-center justify-center sticker-shadow-sm font-bold text-xs">
+            2
+          </div>
+          <div class="hidden group-hover:block absolute right-9 top-0 bg-warm-ivory border-2 border-deep-ink p-3 rounded sticker-shadow w-64 z-20">
+            <span class="font-label-sm text-label-sm uppercase text-[#F5731C] font-bold">CULINARY &amp; DOCKS</span>
+            <p class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink text-sm">Abu Tig Marina</p>
+            <p class="text-[11px] text-deep-ink/70">Pastel promenade, yacht docking, cocktail lounges.</p>
+          </div>
+        </div>
+
+        <div class="absolute top-[65%] left-[42%] group cursor-pointer">
+          <div class="w-8 h-8 bg-secondary text-lagoon-glow rounded-full border-2 border-deep-ink flex items-center justify-center sticker-shadow-sm font-bold text-xs">
+            3
+          </div>
+          <div class="hidden group-hover:block absolute left-9 -top-12 bg-warm-ivory border-2 border-deep-ink p-3 rounded sticker-shadow w-64 z-20">
+            <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">ISLAND SANDBAR</span>
+            <p class="font-headline-sm text-headline-sm uppercase font-bold text-deep-ink text-sm">Zeytouna Beach</p>
+            <p class="text-[11px] text-deep-ink/70">Reef pier, overwater loungers, calm snorkeling lagoon.</p>
+          </div>
+        </div>
+
+        <!-- Legend HUD Box -->
+        <div class="absolute bottom-4 left-4 bg-deep-ink/90 backdrop-blur-md text-warm-ivory border-2 border-deep-ink p-3 rounded font-label-sm text-label-sm uppercase flex items-center gap-4">
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> WIND SPOTS</span>
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#F5731C]"></span> DINING &amp; CLUBS</span>
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> TRANQUIL BEACHES</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: THE GOUNA FEED / EDITORIAL JOURNAL (Full Width) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-off-white" id="journal">
+    <div class="w-full px-6 md:px-margin">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 y2k-reveal">
+        <div>
+          <span class="font-label-md text-label-md uppercase text-primary font-bold tracking-widest">// DISPATCHES &amp; CULTURE</span>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-bold text-deep-ink leading-tight mt-1">
+            THE GOUNA JOURNAL.
+          </h2>
+          <p class="font-body-md text-body-md text-deep-ink/70 mt-2 max-w-xl">
+            Essays, gear breakdowns, creator dispatches, and culinary insider guides from the coastal collective.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-label-sm text-label-sm uppercase bg-sand-peach text-deep-ink px-3 py-1 rounded-full border-2 border-deep-ink font-bold">
+            FOLLOW @ELGOUNALIFE
+          </span>
+        </div>
+      </div>
+
+      <!-- Journal Articles 3-Col Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Article 1 -->
+        <article class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Young friends laughing in open-top vintage beach cruiser jeep along desert coast of El Gouna during golden hour with surfboards on roof rack." src="assets/photos/image-000.jpg"/>
+              <span class="absolute top-3 left-3 bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                FIELD GUIDE // 72H
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between font-label-sm text-label-sm uppercase text-deep-ink/60 mb-2 font-bold">
+                <span>BY SARA NOUR</span>
+                <span>5 MIN READ</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink group-hover:text-primary transition-colors">
+                How to spend 72 hours chasing wind &amp; sunsets in El Gouna
+              </h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-3">
+                A tight, zero-fluff itinerary connecting sunrise twin-tip sessions at Mangroovy to evening harbor spritzes at Abu Tig.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex items-center justify-between border-t border-deep-ink/10">
+            <span class="font-label-sm text-label-sm uppercase text-primary font-bold">READ ARTICLE →</span>
+            <button class="w-8 h-8 rounded-full border border-deep-ink/30 flex items-center justify-center hover:bg-sand-peach transition-colors">
+              <span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Top down photo of specialty iced matcha latte fresh bakery croissant and seaside brunch table in sunlit Abu Tig Marina cafe." src="assets/photos/921957660.jpg"/>
+              <span class="absolute top-3 left-3 bg-[#F5731C] text-warm-ivory font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                EATS &amp; SIPS
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between font-label-sm text-label-sm uppercase text-deep-ink/60 mb-2 font-bold">
+                <span>BY TAREK MANSOUR</span>
+                <span>4 MIN READ</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink group-hover:text-primary transition-colors">
+                The best iced matcha and sourdough spots on the marina
+              </h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-3">
+                Five independent roasters and waterfront bakeries fueling early-morning digital nomad sprints and pre-kite breakfasts.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex items-center justify-between border-t border-deep-ink/10">
+            <span class="font-label-sm text-label-sm uppercase text-primary font-bold">READ ARTICLE →</span>
+            <button class="w-8 h-8 rounded-full border border-deep-ink/30 flex items-center justify-center hover:bg-sand-peach transition-colors">
+              <span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT overflow-hidden sticker-shadow flex flex-col justify-between group y2k-reveal">
+          <div>
+            <div class="relative aspect-[16/10] overflow-hidden border-b-2 border-deep-ink">
+              <img class="card-zoom-img w-full h-full object-cover" data-alt="Hydrofoil surfer soaring effortlessly high above flat turquoise sea spray in El Gouna with golden sunlight shining on the water." src="assets/photos/ice-187193-21f6f4-206889.jpg"/>
+              <span class="absolute top-3 left-3 bg-secondary text-lagoon-glow font-label-sm text-label-sm uppercase px-2 py-0.5 rounded font-bold">
+                GEAR &amp; OCEAN
+              </span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between font-label-sm text-label-sm uppercase text-deep-ink/60 mb-2 font-bold">
+                <span>BY LUKAS VOGT</span>
+                <span>7 MIN READ</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md font-bold uppercase text-deep-ink group-hover:text-primary transition-colors">
+                Why Egypt's Red Sea became the global hub for wing foiling
+              </h3>
+              <p class="font-body-sm text-body-sm text-deep-ink/75 mt-3">
+                Pro hydrofoilers break down why the unique thermal venturi and mirror-flat shallow basins make Gouna the world's best flight laboratory.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex items-center justify-between border-t border-deep-ink/10">
+            <span class="font-label-sm text-label-sm uppercase text-primary font-bold">READ ARTICLE →</span>
+            <button class="w-8 h-8 rounded-full border border-deep-ink/30 flex items-center justify-center hover:bg-sand-peach transition-colors">
+              <span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: BUILD YOUR CUSTOM SUMMER FOLIO (Full Width Interactive Builder) -->
+  <section class="py-16 md:py-24 border-b-2 border-deep-ink bg-warm-ivory" id="planner">
+    <div class="w-full px-6 md:px-margin">
+      <div class="bg-off-white border-2 border-deep-ink rounded-DEFAULT p-8 md:p-12 sticker-shadow-lg y2k-reveal">
+        <div class="max-w-3xl mb-10">
+          <div class="inline-flex items-center gap-2 bg-[#F5731C] text-warm-ivory font-label-sm text-label-sm uppercase px-3 py-1 rounded-full border border-deep-ink sticker-shadow-sm mb-3 font-bold">
+            <span>INTERACTIVE BUILDER</span>
+          </div>
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg uppercase font-black text-deep-ink leading-tight">
+            BUILD YOUR CUSTOM SUMMER FOLIO.
+          </h2>
+          <p class="font-body-md text-body-md text-deep-ink/75 mt-2">
+            Pick your frequency, select your crew size, and instantly compile a customized day-by-day itinerary ready to beam to Apple Wallet or share on WhatsApp.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Controls Panel -->
+          <div class="lg:col-span-7 space-y-8">
+            <!-- Step 1: Vibe Selection -->
+            <div>
+              <label class="font-label-md text-label-md uppercase font-bold text-deep-ink block mb-3">
+                STEP 01 // SELECT TRAVEL FREQUENCY
+              </label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <button class="itinerary-vibe-btn active px-3 py-3 border-2 border-deep-ink rounded-full bg-primary-container text-warm-ivory font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm text-center" type="button">
+                  CHILL &amp; DUNE
+                </button>
+                <button class="itinerary-vibe-btn px-3 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-sand-peach text-center" type="button">
+                  KITE THRILL
+                </button>
+                <button class="itinerary-vibe-btn px-3 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-sand-peach text-center" type="button">
+                  NIGHT BEATS
+                </button>
+                <button class="itinerary-vibe-btn px-3 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-sand-peach text-center" type="button">
+                  FOOD CRUSH
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Crew Size -->
+            <div>
+              <label class="font-label-md text-label-md uppercase font-bold text-deep-ink block mb-3">
+                STEP 02 // TRAVEL CREW SIZE
+              </label>
+              <div class="grid grid-cols-3 gap-3">
+                <button class="itinerary-crew-btn px-4 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-lagoon-glow text-center" type="button">
+                  SOLO DRIFT
+                </button>
+                <button class="itinerary-crew-btn active px-4 py-3 border-2 border-deep-ink rounded-full bg-secondary text-warm-ivory font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm text-center" type="button">
+                  COASTAL DUO
+                </button>
+                <button class="itinerary-crew-btn px-4 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-lagoon-glow text-center" type="button">
+                  CREW (4+)
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Duration -->
+            <div>
+              <label class="font-label-md text-label-md uppercase font-bold text-deep-ink block mb-3">
+                STEP 03 // STAY DURATION
+              </label>
+              <div class="grid grid-cols-3 gap-3">
+                <button class="itinerary-days-btn px-4 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-sand-peach text-center" type="button">
+                  WEEKEND (3D)
+                </button>
+                <button class="itinerary-days-btn active px-4 py-3 border-2 border-deep-ink rounded-full bg-deep-ink text-warm-ivory font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm text-center" type="button">
+                  ONE WEEK (7D)
+                </button>
+                <button class="itinerary-days-btn px-4 py-3 border-2 border-deep-ink rounded-full bg-warm-ivory text-deep-ink font-label-sm text-label-sm uppercase font-bold sticker-shadow-sm hover:bg-sand-peach text-center" type="button">
+                  RESIDENCY (14D)
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Preview Card -->
+          <div class="lg:col-span-5 bg-warm-ivory border-2 border-deep-ink rounded-DEFAULT p-6 sticker-shadow flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b-2 border-deep-ink pb-4">
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">LIVE FOLIO GENERATED</span>
+                  <h4 id="folio-title" class="font-headline-sm text-headline-sm font-bold uppercase text-deep-ink">THE DRIFT &amp; DISCOVER SUITE</h4>
+                </div>
+                <span id="folio-tag" class="bg-sand-peach text-deep-ink px-2.5 py-1 rounded text-[11px] font-bold border border-deep-ink">7-DAY PLAN</span>
+              </div>
+              <div id="folio-days" class="mt-4 space-y-3">
+                <div class="p-3 bg-off-white border border-deep-ink/20 rounded">
+                  <span class="font-label-sm text-label-sm uppercase text-primary font-bold">DAYS 01 - 02: ARRIVE &amp; DRIFT</span>
+                  <p class="font-body-sm text-body-sm text-deep-ink mt-0.5">Casa Cook check-in, sunset session at Zeytouna Pier, dockside dinner at Abu Tig.</p>
+                </div>
+                <div class="p-3 bg-off-white border border-deep-ink/20 rounded">
+                  <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">DAYS 03 - 04: WIND &amp; DOLPHINS</span>
+                  <p class="font-body-sm text-body-sm text-deep-ink mt-0.5">Private boat to Sha'ab el Erg dolphin house, afternoon flat-water hydrofoil lessons.</p>
+                </div>
+                <div class="p-3 bg-off-white border border-deep-ink/20 rounded">
+                  <span class="font-label-sm text-label-sm uppercase text-[#F5731C] font-bold">DAYS 05 - 07: DESERT &amp; SOUND</span>
+                  <p class="font-body-sm text-body-sm text-deep-ink mt-0.5">Sunset quad safari in the Eastern dunes, Bedouin dinner, closing DJ sets at Club 88.</p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 border-t-2 border-deep-ink mt-6 flex flex-col sm:flex-row gap-3">
+              <button onclick="alert('Exported your custom summer folio to mobile wallet format!');" class="flex-1 py-3 bg-[#F5731C] text-deep-ink font-label-md text-label-md uppercase font-bold rounded-full border-2 border-deep-ink sticker-shadow-sm hover:bg-sand-peach transition-colors">
+                EXPORT TO PHONE
+              </button>
+              <button onclick="alert('Share link generated! Copied to clipboard: https://elgouna.com/folio#summer2025');" class="flex-1 py-3 bg-off-white text-deep-ink font-label-md text-label-md uppercase font-bold rounded-full border-2 border-deep-ink sticker-shadow-sm hover:bg-lagoon-glow transition-colors">
+                SHARE WITH CREW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPREHENSIVE BRAND COLOPHON & FOOTER (Full Width) -->
+  <footer class="docked full-width bottom bg-deep-ink text-warm-ivory border-t-2 border-deep-ink">
+    <div class="w-full px-6 md:px-margin py-12 md:py-16 mx-auto flex flex-col justify-between">
+      <!-- Top Colophon Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-warm-ivory/15">
+        <!-- Brand & Manifesto -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img alt="Official El Gouna emblem logo badge" class="h-12 w-auto object-contain brightness-110" src="assets/el-gouna-logo.png"/>
+            <div>
+              <span class="font-headline-lg text-headline-lg font-black text-warm-ivory tracking-tighter uppercase leading-none block">EL GOUNA</span>
+              <span class="font-label-sm text-label-sm text-sand-peach uppercase tracking-widest font-bold">RED SEA // EGYPT</span>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-warm-ivory/70 max-w-sm pt-2">
+            An intentionally designed coastal ecosystem built along 19 tranquil turquoise lagoons on Egypt's Red Sea shore. Built for creatives, wave chasers, and summer purists.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <span class="px-2.5 py-1 bg-secondary text-lagoon-glow font-label-sm text-label-sm uppercase rounded font-bold">CARBON NEUTRAL GOAL 2030</span>
+            <span class="px-2.5 py-1 bg-primary-container text-warm-ivory font-label-sm text-label-sm uppercase rounded font-bold">EARTHCHECK GOLD</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: Ecosystem -->
+        <div class="lg:col-span-3 space-y-3">
+          <h5 class="font-headline-md text-headline-md font-bold uppercase text-sun-daze">ECOSYSTEM</h5>
+          <ul class="space-y-2">
+            <li><a class="text-warm-ivory/70 font-label-sm text-label-sm tracking-widest uppercase transition-colors hover:text-lagoon-glow hover:underline" href="#vibes">MANIFESTO &amp; SUSTAINABILITY</a></li>
+            <li><a class="text-warm-ivory/70 font-label-sm text-label-sm tracking-widest uppercase transition-colors hover:text-lagoon-glow hover:underline" href="#stays">CREATOR NETWORK</a></li>
+            <li><a class="text-warm-ivory/70 font-label-sm text-label-sm tracking-widest uppercase transition-colors hover:text-lagoon-glow hover:underline" href="#activities">WIND &amp; TIDES FEED</a></li>
+            <li><a class="text-warm-ivory/70 font-label-sm text-label-sm tracking-widest uppercase transition-colors hover:text-lagoon-glow hover:underline" href="#nightlife">FESTIVAL PASSES</a></li>
+            <li><a class="text-warm-ivory/70 font-label-sm text-label-sm tracking-widest uppercase transition-colors hover:text-lagoon-glow hover:underline" href="#journal">SOUNDTRACKS</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Drop -->
+        <div class="lg:col-span-4 space-y-4">
+          <h5 class="font-headline-md text-headline-md font-bold uppercase text-sun-daze">GET THE TIDES DROP</h5>
+          <p class="font-body-sm text-body-sm text-warm-ivory/70">
+            Curated weekend party lineups, wind forecasts, and secret beach spots sent every Thursday at golden hour.
+          </p>
+          <form class="flex items-center gap-2" onsubmit="event.preventDefault(); alert('Subscribed to The Tides Drop!');">
+            <input class="w-full px-4 py-2.5 rounded-full bg-warm-ivory text-deep-ink font-label-md text-label-md uppercase border-2 border-warm-ivory placeholder:text-deep-ink/50 focus:outline-none focus:ring-2 focus:ring-lagoon-glow" placeholder="YOUR@EMAIL.COM" type="email" required/>
+            <button class="px-5 py-2.5 bg-primary-container text-warm-ivory font-label-md text-label-md uppercase font-bold rounded-full sticker-shadow-sm hover:bg-primary transition-colors shrink-0" type="submit">
+              JOIN
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Legal Colophon Row -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-warm-ivory/60 font-body-sm text-body-sm">
+        <p>© 2025–2026 EL GOUNA RED SEA. CULTURE &amp; DRIFT. ALL RIGHTS RESERVED. 27.3949° N, 33.6765° E.</p>
+        <div class="flex items-center gap-6 font-label-sm text-label-sm uppercase">
+          <a class="hover:text-warm-ivory transition-colors" href="#">PRIVACY POLICY</a>
+          <a class="hover:text-warm-ivory transition-colors" href="#">TERMS OF PASS</a>
+          <a class="hover:text-warm-ivory transition-colors" href="#">ACCESSIBILITY</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Y2K Interactive Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Scroll-trigger reveals with bounce
+      const reveals = document.querySelectorAll('.y2k-reveal');
+      if ('IntersectionObserver' in window) {
+        const obs = new IntersectionObserver((entries, o) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-visible');
+              o.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        reveals.forEach(r => obs.observe(r));
+      } else {
+        reveals.forEach(r => r.classList.add('is-visible'));
+      }
+
+      // 2. Interactive Itinerary Toggle Group
+      let currentVibe = 'CHILL & DUNE';
+      let currentCrew = 'COASTAL DUO';
+      let currentDays = 'ONE WEEK (7D)';
+
+      function setupToggleGroup(selector, onSelect) {
+        const buttons = document.querySelectorAll(selector);
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => {
+              b.classList.remove('bg-primary-container', 'bg-secondary', 'bg-deep-ink', 'text-warm-ivory');
+              b.classList.add('bg-warm-ivory', 'text-deep-ink');
+            });
+            btn.classList.remove('bg-warm-ivory', 'text-deep-ink');
+            btn.classList.add('bg-primary-container', 'text-warm-ivory');
+            onSelect(btn.textContent.trim());
+            updateFolio();
+          });
+        });
+      }
+
+      setupToggleGroup('.itinerary-vibe-btn', v => { currentVibe = v; });
+      setupToggleGroup('.itinerary-crew-btn', c => { currentCrew = c; });
+      setupToggleGroup('.itinerary-days-btn', d => { currentDays = d; });
+
+      function updateFolio() {
+        const titleElem = document.getElementById('folio-title');
+        const tagElem = document.getElementById('folio-tag');
+        if (titleElem) titleElem.textContent = `${currentVibe} // ${currentCrew}`;
+        if (tagElem) tagElem.textContent = currentDays;
+      }
+    });
+  </script>
+  <script src="js/site2.js"></script>
+</body>
+</html>

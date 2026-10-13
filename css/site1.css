@@ -1,0 +1,254 @@
+/* ==========================================================================
+   SITE 1: RETRO MEDITERRANEAN MODERNISM
+   Spectacular Editorial Motion System & Luxury Aesthetics
+   ========================================================================== */
+
+:root {
+  --color-maroon: #A50E28;
+  --color-maroon-dark: #7D0019;
+  --color-sunset-orange: #F5731C;
+  --color-sand-peach: #F9CE9A;
+  --color-teal: #036982;
+  --color-warm-ivory: #FFF9F0;
+  --color-soft-cream: #F5EBDD;
+  --color-deep-ink: #202626;
+  --color-muted-sand: #D9C4A5;
+  --color-pure-white: #FFFFFF;
+
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-silk: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-soft-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-sand);
+  border-radius: 4px;
+  border: 2px solid var(--color-soft-cream);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-maroon);
+}
+
+/* ==========================================================================
+   TEXT ANIMATIONS (SITE 1)
+   ========================================================================== */
+
+/* Shimmering Gold / Sunset Sheen on Headlines */
+.editorial-shimmer {
+  background: linear-gradient(105deg, #A50E28 0%, #F5731C 35%, #F9CE9A 50%, #F5731C 65%, #A50E28 100%);
+  background-size: 250% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shineSheen 7s linear infinite;
+}
+
+@keyframes shineSheen {
+  0% { background-position: -250% 0; }
+  100% { background-position: 250% 0; }
+}
+
+/* Headline Reveal with Letter Spacing Expansion */
+.text-expand-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  letter-spacing: -0.04em;
+  transition: opacity 1s var(--ease-editorial), transform 1s var(--ease-editorial), letter-spacing 1.2s var(--ease-editorial);
+}
+.text-expand-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  letter-spacing: -0.01em;
+}
+
+/* Subtle Underline Draw on Links */
+.hover-draw-line {
+  position: relative;
+  display: inline-block;
+}
+.hover-draw-line::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-maroon);
+  transition: width 0.35s var(--ease-editorial);
+}
+.hover-draw-line:hover::after {
+  width: 100%;
+}
+
+/* ==========================================================================
+   CARD & CONTAINER ANIMATIONS (SITE 1)
+   ========================================================================== */
+
+/* 3D Magnetic Luxury Card */
+.editorial-card {
+  position: relative;
+  transition: transform 0.45s var(--ease-editorial), box-shadow 0.45s var(--ease-editorial), border-color 0.35s ease;
+  will-change: transform, box-shadow;
+}
+.editorial-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 25px 45px -12px rgba(32, 38, 38, 0.15), 0 10px 20px -5px rgba(165, 14, 40, 0.08);
+  border-color: var(--color-sand-peach);
+}
+
+/* Ambient Subtle Card Glow */
+.editorial-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(249, 206, 154, 0.18), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+.editorial-card:hover::before {
+  opacity: 1;
+}
+
+/* Staggered Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.85s var(--ease-editorial), transform 0.85s var(--ease-editorial);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92) translateY(20px);
+  transition: opacity 0.9s var(--ease-editorial), transform 0.9s var(--ease-editorial);
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.85s var(--ease-editorial), transform 0.85s var(--ease-editorial);
+}
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.85s var(--ease-editorial), transform 0.85s var(--ease-editorial);
+}
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.delay-100 { transition-delay: 100ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-400 { transition-delay: 400ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+
+/* ==========================================================================
+   IMAGE ANIMATIONS (SITE 1)
+   ========================================================================== */
+
+/* Ken Burns Luxury Zoom */
+.card-img-zoom {
+  transition: transform 0.8s var(--ease-editorial), filter 0.6s ease;
+  will-change: transform;
+}
+.editorial-card:hover .card-img-zoom {
+  transform: scale(1.08);
+  filter: contrast(1.03) saturate(1.05);
+}
+
+/* Floating Founded 1989 Stamp */
+.stamp-badge {
+  border: 1.5px dashed var(--color-maroon);
+  position: relative;
+  transition: transform 0.5s var(--ease-spring), box-shadow 0.5s ease;
+  animation: stampFloat 8s ease-in-out infinite;
+}
+@keyframes stampFloat {
+  0%, 100% { transform: rotate(-12deg) translateY(0); }
+  50% { transform: rotate(-7deg) translateY(-6px) scale(1.03); }
+}
+.stamp-badge:hover {
+  transform: rotate(0deg) scale(1.15) !important;
+  box-shadow: 0 12px 28px -5px rgba(165, 14, 40, 0.3);
+}
+
+/* Hero Frame Gyroscope Float */
+.hero-floating-frame {
+  animation: heroGentleFloat 9s ease-in-out infinite;
+}
+@keyframes heroGentleFloat {
+  0%, 100% { transform: translateY(0) rotate(1deg); }
+  50% { transform: translateY(-10px) rotate(1.8deg); }
+}
+
+/* Beacon Radar Pulse on Map Pins */
+@keyframes beaconPulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 115, 28, 0.7); }
+  70% { box-shadow: 0 0 0 18px rgba(245, 115, 28, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 115, 28, 0); }
+}
+.active-pin {
+  animation: beaconPulse 2.2s infinite;
+  transform: scale(1.15);
+}
+
+/* Sound Wave Equalizer Bars */
+.audio-bar {
+  display: inline-block;
+  width: 3px;
+  height: 12px;
+  background-color: var(--color-sunset-orange);
+  margin: 0 1.5px;
+  border-radius: 2px;
+  transition: height 0.2s ease;
+}
+.audio-playing .audio-bar:nth-child(1) { animation: soundBar 0.9s infinite ease-in-out 0.1s; }
+.audio-playing .audio-bar:nth-child(2) { animation: soundBar 0.9s infinite ease-in-out 0.3s; }
+.audio-playing .audio-bar:nth-child(3) { animation: soundBar 0.9s infinite ease-in-out 0.2s; }
+.audio-playing .audio-bar:nth-child(4) { animation: soundBar 0.9s infinite ease-in-out 0.4s; }
+
+@keyframes soundBar {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+/* Compass Rose Back-to-Top Rotation */
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) rotate(0deg);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.4s var(--ease-spring);
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) rotate(0deg);
+}
+.back-to-top:hover {
+  transform: translateY(-5px) scale(1.1) rotate(60deg);
+}

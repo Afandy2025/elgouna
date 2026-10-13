@@ -1,0 +1,155 @@
+/* ==========================================================================
+   SITE 3: RED SEA TRAVEL GAZETTE & RESORT ARCHIVE (1978–1988)
+   Vintage Editorial Motion System, Airmail Glides & Postal Stamp Physics
+   ========================================================================== */
+
+:root {
+  --gazette-maroon: #A50E28;
+  --gazette-teal: #036982;
+  --gazette-orange: #F5731C;
+  --gazette-sand: #F9CE9A;
+  --gazette-ivory: #FFF9F0;
+  --gazette-cream: #F5EBDD;
+  --gazette-ink: #1E2323;
+
+  --ease-vintage: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Vintage Paper Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--gazette-cream);
+  border-left: 1px solid var(--gazette-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gazette-maroon);
+  border: 2px solid var(--gazette-cream);
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   AIRMAIL & POSTAL STAMP ANIMATIONS (SITE 3)
+   ========================================================================== */
+
+/* Shimmering Animated Airmail Border Strip */
+@keyframes airmailGlide {
+  0% { background-position: 0 0; }
+  100% { background-position: 48px 0; }
+}
+.airmail-strip {
+  background: repeating-linear-gradient(
+    -45deg,
+    #A50E28,
+    #A50E28 12px,
+    #FFF9F0 12px,
+    #FFF9F0 24px,
+    #036982 24px,
+    #036982 36px,
+    #FFF9F0 36px,
+    #FFF9F0 48px
+  );
+  background-size: 48px 6px;
+  animation: airmailGlide 3.5s linear infinite;
+  height: 6px;
+}
+
+/* Postal Stamp with Wax Seal Press & Tilt */
+.postal-stamp {
+  border: 2px dashed var(--gazette-maroon);
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+.postal-stamp:hover {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 10px 22px rgba(165, 14, 40, 0.25);
+}
+.postal-stamp::before {
+  content: "★";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gazette-ivory);
+  padding: 0 5px;
+  font-size: 11px;
+  color: var(--gazette-maroon);
+}
+
+/* Postmark Cancellation Seal Rotation */
+.postmark-seal {
+  border: 2px dashed var(--gazette-teal);
+  border-radius: 9999px;
+  transition: transform 0.6s var(--ease-vintage), box-shadow 0.4s ease;
+}
+.postmark-seal:hover {
+  transform: rotate(25deg) scale(1.12);
+  box-shadow: 0 8px 20px rgba(3, 105, 130, 0.25);
+}
+
+/* ==========================================================================
+   TEXT ANIMATIONS & DROP-CAPS (SITE 3)
+   ========================================================================== */
+
+.drop-cap::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.6rem;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.85rem;
+  color: var(--gazette-maroon);
+  font-weight: 700;
+  text-shadow: 2px 2px 0px rgba(249, 206, 154, 0.5);
+  transition: transform 0.3s ease;
+}
+.drop-cap:hover::first-letter {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+/* Vintage Double Borders with Hover Expansion */
+.vintage-double-border {
+  border-top: 3px double var(--gazette-maroon);
+  border-bottom: 3px double var(--gazette-maroon);
+  transition: padding 0.3s ease;
+}
+
+/* ==========================================================================
+   CARD & IMAGE ANIMATIONS (SITE 3)
+   ========================================================================== */
+
+/* Vintage Ledger / Folio Card Lift */
+.vintage-card {
+  transition: transform 0.45s var(--ease-vintage), box-shadow 0.45s var(--ease-vintage), border-color 0.3s ease;
+  will-change: transform;
+}
+.vintage-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px -10px rgba(30, 35, 35, 0.16);
+  border-color: var(--gazette-maroon);
+}
+
+/* Sepia-to-Vivid Color Transition for Analog Photographs */
+.vintage-card img,
+.aspect-\[4\/5\] img,
+.aspect-\[16\/9\] img {
+  filter: sepia(18%) contrast(1.03);
+  transition: filter 0.6s ease, transform 0.7s var(--ease-vintage);
+}
+.vintage-card:hover img,
+.group:hover img {
+  filter: sepia(0%) contrast(1.1);
+  transform: scale(1.06);
+}
+
+/* Vintage Scroll Reveals */
+.vintage-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s var(--ease-vintage), transform 0.85s var(--ease-vintage);
+  will-change: opacity, transform;
+}
+.vintage-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

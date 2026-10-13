@@ -1,0 +1,210 @@
+/* ==========================================================================
+   SITE 2: COASTAL EUPHORIA / Y2K CYBER-EDITORIAL
+   Kinetic Motion System, Tactile Sticker Physics & Gen-Z Aesthetics
+   ========================================================================== */
+
+:root {
+  --y2k-ink: #111516;
+  --y2k-orange: #F5731C;
+  --y2k-maroon: #A50E28;
+  --y2k-teal: #036982;
+  --y2k-sand: #F9CE9A;
+  --y2k-glow: #97E2FE;
+  --y2k-ivory: #FFFDF9;
+
+  --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-snappy: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/* Y2K Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--y2k-ivory);
+  border-left: 2px solid var(--y2k-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--y2k-orange);
+  border: 2px solid var(--y2k-ink);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--y2k-maroon);
+}
+
+/* ==========================================================================
+   TEXT ANIMATIONS (SITE 2)
+   ========================================================================== */
+
+/* High-Voltage Kinetic Hero Headline Entrance */
+@keyframes textSlam {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.92) skewX(-2deg);
+    letter-spacing: -0.06em;
+  }
+  60% {
+    transform: translateY(-6px) scale(1.02) skewX(1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) skewX(0deg);
+    letter-spacing: -0.04em;
+  }
+}
+.y2k-title-slam {
+  animation: textSlam 0.9s var(--ease-elastic) forwards;
+}
+
+/* Neon Pulse for Live Feed Badges */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 115, 28, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 14px 4px rgba(245, 115, 28, 0.4);
+  }
+}
+.neon-pulse-badge {
+  animation: neonPulse 2.5s infinite;
+}
+
+/* ==========================================================================
+   TACTILE STICKER PHYSICS & CARD ANIMATIONS (SITE 2)
+   ========================================================================== */
+
+/* Hard Cast Sticker Drop Shadows with Elastic Feedback */
+.sticker-shadow {
+  box-shadow: 4px 4px 0px var(--y2k-ink);
+  transition: transform 0.25s var(--ease-elastic), box-shadow 0.25s var(--ease-elastic);
+  will-change: transform, box-shadow;
+}
+.sticker-shadow:hover {
+  transform: translate(-3px, -3px) rotate(-0.5deg);
+  box-shadow: 7px 7px 0px var(--y2k-ink);
+}
+.sticker-shadow:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1.5px 1.5px 0px var(--y2k-ink);
+}
+
+.sticker-shadow-sm {
+  box-shadow: 2.5px 2.5px 0px var(--y2k-ink);
+  transition: transform 0.2s var(--ease-elastic), box-shadow 0.2s var(--ease-elastic);
+}
+.sticker-shadow-sm:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4.5px 4.5px 0px var(--y2k-ink);
+}
+.sticker-shadow-sm:active {
+  transform: translate(1.5px, 1.5px);
+  box-shadow: 1px 1px 0px var(--y2k-ink);
+}
+
+.sticker-shadow-lg {
+  box-shadow: 6px 6px 0px var(--y2k-ink);
+  transition: transform 0.3s var(--ease-elastic), box-shadow 0.3s var(--ease-elastic);
+}
+.sticker-shadow-lg:hover {
+  transform: translate(-4px, -4px) rotate(0deg);
+  box-shadow: 10px 10px 0px var(--y2k-ink);
+}
+
+/* Wobble Badges */
+@keyframes stickerWobble {
+  0%, 100% { transform: rotate(-6deg) scale(1); }
+  35% { transform: rotate(-3deg) scale(1.05); }
+  70% { transform: rotate(-8deg) scale(0.98); }
+}
+.wobble-sticker {
+  animation: stickerWobble 5.5s ease-in-out infinite;
+}
+.wobble-sticker:hover {
+  animation-play-state: paused;
+  transform: scale(1.15) rotate(0deg) !important;
+}
+
+/* Floating Polaroid with Sun-Glaze Effect */
+@keyframes polaroidDrift {
+  0%, 100% { transform: translateY(0px) rotate(2deg); }
+  50% { transform: translateY(-8px) rotate(3.5deg); }
+}
+.floating-polaroid {
+  animation: polaroidDrift 6.5s ease-in-out infinite;
+  position: relative;
+}
+.floating-polaroid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.floating-polaroid:hover::after {
+  opacity: 1;
+}
+
+/* Kinetic Marquee Ribbon */
+@keyframes marqueeFast {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marqueeFast 20s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Y2K Bouncy Scroll Reveals */
+.y2k-reveal {
+  opacity: 0;
+  transform: translateY(32px) scale(0.96);
+  transition: opacity 0.65s var(--ease-snappy), transform 0.65s var(--ease-snappy);
+  will-change: opacity, transform;
+}
+.y2k-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Stagger Children */
+.y2k-stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease-elastic), transform 0.6s var(--ease-elastic);
+}
+.y2k-stagger.is-visible > *:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 50ms; }
+.y2k-stagger.is-visible > *:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 120ms; }
+.y2k-stagger.is-visible > *:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 190ms; }
+.y2k-stagger.is-visible > *:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 260ms; }
+.y2k-stagger.is-visible > *:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 330ms; }
+.y2k-stagger.is-visible > *:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 400ms; }
+
+/* ==========================================================================
+   IMAGE ANIMATIONS (SITE 2)
+   ========================================================================== */
+
+.card-zoom-img {
+  transition: transform 0.5s var(--ease-elastic), filter 0.4s ease;
+  will-change: transform;
+}
+.group:hover .card-zoom-img {
+  transform: scale(1.08) rotate(0.5deg);
+  filter: contrast(1.06) saturate(1.12);
+}
+
+/* Perforated Ticket Ripple Effect */
+.ticket-perforation {
+  position: relative;
+  transition: transform 0.3s var(--ease-elastic);
+}
+.ticket-perforation:hover {
+  transform: translateY(-4px) scale(1.01);
+}
